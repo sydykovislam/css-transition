@@ -13,33 +13,10 @@
     background-color: skyblue;
     box-shadow: 0  0 40px rgb(105, 105, 105);
     animation: anim2 1s;
-    
+    transition: transform 1s, box-shadow 1s, background-color 1s;
 }
 #ssylka:hover {
-    animation: anim1 1s  forwards; 
-}
-@keyframes anim1 {
-    0%{
-        transform: scale(1, 1);
-        background-color: skyblue;
-        box-shadow: 0  0 40px rgb(105, 105, 105);
-    }
-    100% {
-        transform: scale(1.2, 1.2);
-        background-color: rgb(223, 108, 73);
-        box-shadow: 0  0 10px rgb(105, 105, 105);
-    }
-
-}
-@keyframes anim2 {
-    0% {
-        transform: scale(1.2, 1.2);
-        background-color: rgb(223, 108, 73);
-        box-shadow: 0  0 10px rgb(105, 105, 105);
-    }
-    100%{
-        transform: scale(1, 1);
-        background-color: skyblue;
-        box-shadow: 0  0 40px rgb(105, 105, 105);
-    }
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 10px  rgb(105, 105, 105);
+    background-color: rgb(223, 108, 73);
 }
