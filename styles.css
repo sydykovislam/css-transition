@@ -1,0 +1,45 @@
+#ssylka {
+    margin: 200px auto;
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    line-height: 150px;
+    border-radius: 100%;
+    background-color: skyblue;
+    box-shadow: 0  0 40px rgb(105, 105, 105);
+    animation: anim2 1s;
+    
+}
+#ssylka:hover {
+    animation: anim1 1s  forwards; 
+}
+@keyframes anim1 {
+    0%{
+        transform: scale(1, 1);
+        background-color: skyblue;
+        box-shadow: 0  0 40px rgb(105, 105, 105);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+        background-color: rgb(223, 108, 73);
+        box-shadow: 0  0 10px rgb(105, 105, 105);
+    }
+
+}
+@keyframes anim2 {
+    0% {
+        transform: scale(1.2, 1.2);
+        background-color: rgb(223, 108, 73);
+        box-shadow: 0  0 10px rgb(105, 105, 105);
+    }
+    100%{
+        transform: scale(1, 1);
+        background-color: skyblue;
+        box-shadow: 0  0 40px rgb(105, 105, 105);
+    }
+}
